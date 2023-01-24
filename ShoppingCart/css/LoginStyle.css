@@ -1,0 +1,93 @@
+﻿
+.loginDiv {
+    min-height: 80vh;
+    width: 100%;
+    margin: -5px;
+    background-color: #f0f4f3;
+    background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url('../image/bgpattern.png');
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 80vh;
+}
+#loginContainer {
+    width:30%;
+    margin-top:6%;
+}
+.lblError {
+    text-align: center !important;
+}
+.text-info {
+    font-size: 18px;
+}
+.form-group {
+    margin-bottom:0px !important;
+}
+.form-control {
+    border-width: 0 !important;
+    border: 0px !important;
+    background-color: #f0f4f3;
+    height:40px;
+    font-size:17px;
+    border-radius:0px !important;
+}
+.btn-info {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size:16px;
+    border-radius:0px !important;
+    background-color: #40ae9f !important;
+}
+.btn-info:hover {
+    background-color: #c7eae6 !important;
+    color: #2a6f67 !important;
+    border-color: #40ae9f;
+}
+#login .container #login-row #login-column #login-box {
+    margin-left: 30%;
+    margin-top: 12%;
+    max-width: 450px;
+    height: 350px;
+    background-color: white;
+    color: #40ae9f;
+}
+.GoBackArrow {
+    margin-bottom: 4px;
+    margin-right: 8px;
+}
+
+/*#login-box {
+   box-shadow: 0px 0px 20px 3px #e1e1e1;
+}*/
+#login .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+}
+@media only screen and (max-width: 767px) {
+    #login .container #login-row #login-column #login-box {
+        margin:0;
+    }
+}
+@media only screen and (min-width:767px) and (max-width: 1024px) {
+    .signupDiv {
+        min-height:82vh !important;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    #loginContainer {
+        width: inherit;
+    }
+}
+
+.btnForgot {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 5px 10px;
+    color: white;
+    background-color: #40ae9f;
+    display: block;
+}
+
+

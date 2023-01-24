@@ -1,0 +1,3 @@
+﻿function ShowPopup() {
+    $("#btnShowPopup").click();
+}

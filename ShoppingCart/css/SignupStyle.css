@@ -1,0 +1,139 @@
+﻿@import "font-awesome.min.css";
+@import "font-awesome-ie7.min.css";
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f0f4f3;
+}
+.signupDiv {
+    background-color: #f0f4f3;
+    min-height: 80vh;
+    background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url('../image/bgpattern.png');
+}
+.ContentDiv {
+    margin-top:6%;
+    border-radius:0px !important;
+    background-color: white !important;
+    border-width: 0;
+    box-shadow: 2px 2px 25px 5px #C9C9C9;
+}
+input[type=radio] {
+    margin:5px 5px !important;
+}
+.dropdown {
+    width:100%;
+}
+.btn-info {
+    background-color: #40ae9f;
+    border-radius: 0px !important;
+}
+.btn-info:hover {
+    background-color: #c7eae6 !important;
+    color: #2a6f67 !important;
+    border-color: #40ae9f;
+}
+h2 {
+    background-color: white !important;
+    color: #40ae9f !important;
+    text-align:center !important;
+    margin-bottom:20px;
+}
+.header,
+.marketing,
+.fullLine,
+.footer {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+}
+.header {
+    border-bottom: 1px solid #e5e5e5;
+}
+.header h3 {
+    padding-bottom: 19px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+}
+.form-control,select {
+    border-radius: 0px !important;
+    background-color: #f0f4f3;
+    border: 0px;
+    
+}
+#ContentPlaceHolder1_txtDOB {
+    width: 83%;
+    float: left;
+    background-color: #f0f4f3;
+}
+#ContentPlaceHolder1_divCalendar {
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    left: 26%;
+}
+select, input[type=radio], input[type=date] {
+    color:#888;
+}
+
+}
+select, input[type=radio], input[type=date] {
+    color:#888;
+}
+label {
+    font-weight:400;
+    color:#888;
+}
+.fa-calendar {
+    font-size:23px !important;
+    margin:6px 5px !important;
+    color:#888;
+}
+
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+    .jumbotron .btn {
+        padding: 14px 24px;
+        font-size: 21px;
+    }
+
+.marketing {
+    margin: 40px 0;
+}
+
+.marketing p + h4 {
+    margin-top: 28px;
+}
+
+@media screen and (min-width: 768px) {
+    .header,
+    .marketing,
+    .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .header {
+        margin-bottom: 30px;
+    }
+    .jumbotron {
+        border-bottom: 0;
+    }
+}

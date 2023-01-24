@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ShoppingCart.Master.cs"  Inherits="ShoppingCart.MyMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <link rel="shortcut icon" type="image/x-icon" href="image/fav-icon.png" />
+    <title>Shopping World</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/Master.css" rel="stylesheet" />
+    <script type="text/html" src="script/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <form id="form1" runat="server">
+       <div class="container-fluid">
+        <div class="well well-sm" style="text-align:center"> 	
+            <asp:ImageButton ID="imgBtnHeader" CssClass="HeaderImage" CausesValidation="false" ImageAlign="AbsMiddle" PostBackUrl="~/Default.aspx" ImageUrl="~/image/logo-shopping_world.png" runat="server" />
+        </div>
+           <div id="navDiv" runat="server">
+               <nav class="navbar">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"><i class="fa fa-bars"></i></button>
+                    </div>
+                   <div class="nav collapse navbar-collapse" id="myNavbar" style="font-size: 20px; background-color: gainsboro">
+                       <asp:Menu ID="navigationMenu" runat="server" OnMenuItemClick="navigationMenu_MenuItemClick" DynamicHorizontalOffset="2" Orientation="Horizontal" CssClass="myNav" Font-Names="Verdana" Font-Size="0.8em" ForeColor="White" StaticSubMenuIndent="10px" DisappearAfter="100">
+                           <DynamicHoverStyle ForeColor="White" BackColor="#40ae9f " />
+                           <DynamicMenuItemStyle HorizontalPadding="15px" VerticalPadding="4px" Font-Size="16px"  ForeColor="Black" BorderWidth="0px" />
+                           <DynamicMenuStyle BackColor="gainsboro" Width="160px" />
+                           <DynamicSelectedStyle BackColor="#507CD1" />
+                           <Items>
+                               <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                               <asp:MenuItem Text="Clothes" Value="101">
+                                   <asp:MenuItem Text="Men's Wear" Value="101">
+                                       <asp:MenuItem Text="Shirts" Value="1"></asp:MenuItem>
+                                       <asp:MenuItem Text="Jeans" Value="2"></asp:MenuItem>
+                                       <asp:MenuItem Text="T-Shirts" Value="3"></asp:MenuItem>
+                                       <asp:MenuItem Text="Shoes" Value="4"></asp:MenuItem>
+                                       <asp:MenuItem Text="Chappals" Value="5"></asp:MenuItem>
+                                   </asp:MenuItem>
+                                   <asp:MenuItem Text="Women's Wear" Value="102">
+                                       <asp:MenuItem Text="Tops" Value="6"></asp:MenuItem>
+                                       <asp:MenuItem Text="Sarees" Value="7"></asp:MenuItem>
+                                       <asp:MenuItem Text="Jeans" Value="8"></asp:MenuItem>
+                                       <asp:MenuItem Text="Skirts" Value="9"></asp:MenuItem>
+                                       <asp:MenuItem Text="Western" Value="10"></asp:MenuItem>
+                                       <asp:MenuItem Text="Shoes" Value="11"></asp:MenuItem>
+                                       <asp:MenuItem Text="Sandals" Value="12"></asp:MenuItem>
+                                   </asp:MenuItem>
+                                   <asp:MenuItem Text="Kid's Wear" Value="103">
+                                       <asp:MenuItem Text="Shirts" Value="13"></asp:MenuItem>
+                                       <asp:MenuItem Text="Jeans" Value="14"></asp:MenuItem>
+                                       <asp:MenuItem Text="T-Shirts" Value="15"></asp:MenuItem>
+                                       <asp:MenuItem Text="Shorts" Value="16"></asp:MenuItem>
+                                       <asp:MenuItem Text="Shoes" Value="17"></asp:MenuItem>
+                                       <asp:MenuItem Text="Chappals" Value="18"></asp:MenuItem>
+                                   </asp:MenuItem>
+                               </asp:MenuItem>
+                               <asp:MenuItem Text="Electronics" Value="104">
+                                   <asp:MenuItem Text="Smartphones" Value="19"></asp:MenuItem>
+                                   <asp:MenuItem Text="Laptops" Value="20"></asp:MenuItem>
+                                   <asp:MenuItem Text="Televisions" Value="21"></asp:MenuItem>
+                                   <asp:MenuItem Text="Irons" Value="22"></asp:MenuItem>
+                               </asp:MenuItem>
+                               <asp:MenuItem Text="Groceries" Value="105">
+                                   <asp:MenuItem Text="Rice" Value="23"></asp:MenuItem>
+                                   <asp:MenuItem Text="Oils" Value="24"></asp:MenuItem>
+                                   <asp:MenuItem Text="Cheese" Value="25"></asp:MenuItem>
+                               </asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/Contact.aspx" Text="Contact Us" Value="Contact Us"></asp:MenuItem>
+                           </Items>
+                           <StaticHoverStyle ForeColor="#40ae9f"/>
+                           <StaticMenuItemStyle HorizontalPadding="14px" ForeColor="Black" Font-Size="16px" VerticalPadding="13px" BorderWidth="0px" />
+                           <StaticSelectedStyle BackColor="gainsboro" />
+                       </asp:Menu>
+                       <ul class="nav navbar-nav navbar-right">
+                           <li><a href="Cart.aspx"><span class="glyphicon glyphicon-shopping-cart"></span> MyCart <span class="badge badge-success" id="badgeValue" runat="server"><asp:Label ID="lblBadge" runat="server"></asp:Label></span></a></li>
+                           <li runat="server" class="dropdown" id="profileLink" visible="false"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <asp:Label ID="lblUser" runat="server"></asp:Label><span class="caret"></span></a>
+                               <ul class="dropdown-menu">
+                                   <li><a href="Profile.aspx">My Profile</a></li>
+                                   <li><a href="Cart.aspx">My Cart</a></li>
+                                   <li><a href="Wishlist.aspx">My Wishlist</a></li>
+                                   <li><a href="Orders.aspx">My Orders</a></li>
+                                   <li><a href="Login.aspx">Logout</a></li>
+                               </ul>
+                           </li>    
+                           <li runat="server" id="loginLink"><a href="Login.aspx" OnClick="imgBtnLogin_Click"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                       </ul>
+                   </div>
+               </nav>
+
+           </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="footerDiv icon-bar">
+            <a href="http://www.facebook.com/akkyyakhilesh"><i class="fa fa-facebook-square"></i></a>
+            <a href="http://github.com/archyakhilesh"><i class="fa fa-git-square"></i></a>
+            <a href="http://www.plus.google.com/akhilesh5045"><i class="fa fa-google-plus-square"></i></a>
+            <a href="http://www.instagram.com/akkyyakhilesh"><i class="fa fa-instagram"></i></a>                
+            <a href="http://in.linkedin.com/in/akkyyakhilesh"><i class="fa fa-linkedin-square" ></i></a>
+            <a href="http://www.skype.com/archyakhilesh"><i class="fa fa-skype"></i></a>
+            <a href="http://www.twitter.com/akkyyakhilesh"><i class="fa fa-twitter-square"></i></a>
+            <a href="http://www.youtube.com/akhilesh5045"><i class="fa fa-youtube"></i></a>      
+            <span class="footerSpan">Design and developed by Nitish Kumar</span>
+            <span class="footerSpan">ShoppingWorld ©2022  All Right Reserved!!</span>
+        </div>
+     </div>
+    </form>
+</body>
+</html>

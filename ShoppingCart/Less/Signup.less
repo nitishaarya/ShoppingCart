@@ -1,0 +1,129 @@
+﻿@fontSize:16px;
+@fixedWidth:100%;
+@defaultAlign:center;
+
+.textboxStyle(@width,@style,@color) {
+    padding: 8px;
+    margin: 5px 10px;
+    border: @width @style @color;
+    border-radius: 5px;
+}
+
+body{
+    width:@fixedWidth;
+    margin:0;
+    font-size:@fontSize;
+}
+.container {
+    width: @fixedWidth;
+    position: absolute;
+    display: block;
+}
+
+.mainContent {
+    width: @fixedWidth/2;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+
+    @media (max-width: 767px) {
+        width: 90%;
+    }
+
+    h2 {
+        text-align: @defaultAlign;
+    }
+
+    .fullRow {
+        width: @fixedWidth;
+        text-align: @defaultAlign;
+
+        .textbox {
+            .textboxStyle(1px,solid,grey);
+            width: @fixedWidth - 5%;
+
+            @media (max-width: 767px) {
+                width: 90%;
+            }
+        }
+
+
+
+        .button {
+            width: @fixedWidth - 3%;
+            padding: 8px;
+            background-color: #40ae9f;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 2px solid #40ae9f;
+            font-size: 22px;
+            transition: 0.4s;
+
+            @media (max-width: 767px) {
+                margin-left: 7px;
+            }
+
+            @media(max-width:767px) and (Orientation:landscape) {
+                width: 94%;
+                margin-left:0px;
+            }
+        }
+
+        .button:hover {
+            color: #40ae9f;
+            background-color: white;
+        }
+    }
+
+    .halfRow {
+        width: @fixedWidth/2;
+        float: left;
+
+        .textbox {
+            .textboxStyle(1px,solid,grey);
+            width: @fixedWidth - 10%;
+        }
+
+        #divGender {
+            padding: 13px;
+            width: 47% !important;
+            text-align: left;
+        }
+
+        @media (max-width: 767px) {
+            width: @fixedWidth;
+        }
+    }
+
+    .oneByThree {
+        width: @fixedWidth/3;
+        float: left;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+
+        #State {
+            @media (max-width: 767px) {
+                width: 96%;
+            }
+
+            @media(max-width:767px) and (Orientation:landscape) {
+                width: 94%;
+            }
+        }
+
+        .textbox {
+            .textboxStyle(1px,solid,grey);
+            width: @fixedWidth - 14%;
+
+            @media (max-width: 767px) {
+                width: 90%;
+            }
+        }
+    }
+}
+
+

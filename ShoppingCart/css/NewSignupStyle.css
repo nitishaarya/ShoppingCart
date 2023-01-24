@@ -1,0 +1,198 @@
+﻿body {
+    width: 100%;
+    margin: 0px;
+    background-color: #f0f4f3;
+}
+
+header {
+    width: 98%;
+    margin-left: 8px;
+}
+
+h2 {
+    padding: 20px;
+    background-color: #f0f4f3;
+    text-align: center;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+}
+
+h5 {
+    text-align: center;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    min-height: 80vh;
+}
+
+.mainContent {
+    border-radius: 5px;
+    box-shadow: 2px 2px 25px 5px #C9C9C9;
+    padding: 19px 14px;
+    background-color: white;
+    margin-top: 8%;
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fullRow {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center
+}
+
+.halfRow {
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.oneByThree {
+    width: 33%;
+    float: left;
+}
+
+.oneByThree:not(:first-child) > .textbox {
+    width: 93%;
+}
+
+.fullRow > .textbox {
+    width: 95%;
+    padding: 8px;
+    margin: 5px 10px;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+}
+
+.halfRow > .textbox {
+    width: 90%;
+    padding: 8px;
+    margin: 5px 10px;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+}
+
+.oneByThree > .textbox {
+    width: 87%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+}
+
+.button {
+    width: 97.5%;
+    margin-left: 0px;
+    padding: 10px;
+    background-color: #337ab7;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 3em;
+}
+
+    .button:hover {
+        background-color: #336ab1;
+    }
+
+input {
+    height: 2em;
+}
+
+select {
+    height: 3em;
+}
+
+input[type=radio] {
+    width: 5%;
+    height: 1em;
+}
+
+#divGender {
+    margin-top: 15px;
+    text-align: left;
+    margin-left: 15px;
+    width: 48.1%;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+}
+
+.fullRowFlex {
+    display: flex;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .mainContent {
+        width: 75%;
+    }
+
+    #divGender {
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .mainContent {
+        width: 95%;
+        padding: 5px;
+    }
+
+    header {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .fullRow > .halfRow {
+        width: 105%;
+    }
+
+    .fullRow {
+        width: 95%;
+    }
+
+    .button {
+        width: 101%;
+        margin-left: -2px;
+    }
+
+    .fullLine {
+        width: 95%;
+        margin-left: 8px;
+    }
+
+    .fullRow > .textbox {
+        width: 95%;
+        margin: 7px;
+        margin-left: 1px;
+    }
+
+    #divGender {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    .fullRow > .textbox {
+        width: 94.5%;
+        margin: 7px;
+    }
+
+    .oneByThree:not(:first-child) > .textbox {
+        width: 89%;
+    }
+
+    .oneByThree > .textbox {
+        margin-left: 10px;
+    }
+}

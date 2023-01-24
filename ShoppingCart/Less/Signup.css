@@ -1,0 +1,119 @@
+body {
+  width: 100%;
+  margin: 0;
+  font-size: 16px;
+}
+.container {
+  width: 100%;
+  position: absolute;
+  display: block;
+}
+.mainContent {
+  width: 50%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+@media (max-width: 767px) {
+  .mainContent {
+    width: 90%;
+  }
+}
+.mainContent h2 {
+  text-align: center;
+}
+.mainContent .fullRow {
+  width: 100%;
+  text-align: center;
+}
+.mainContent .fullRow .textbox {
+  padding: 8px;
+  margin: 5px 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 95%;
+}
+@media (max-width: 767px) {
+  .mainContent .fullRow .textbox {
+    width: 90%;
+  }
+}
+.mainContent .fullRow .button {
+  width: 97%;
+  padding: 8px;
+  background-color: #40ae9f;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #40ae9f;
+  font-size: 22px;
+  transition: 0.4s;
+}
+@media (max-width: 767px) {
+  .mainContent .fullRow .button {
+    margin-left: 7px;
+  }
+}
+@media (max-width: 767px) and (Orientation: landscape) {
+  .mainContent .fullRow .button {
+    width: 94%;
+    margin-left: 0px;
+  }
+}
+.mainContent .fullRow .button:hover {
+  color: #40ae9f;
+  background-color: white;
+}
+.mainContent .halfRow {
+  width: 50%;
+  float: left;
+}
+.mainContent .halfRow .textbox {
+  padding: 8px;
+  margin: 5px 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 90%;
+}
+.mainContent .halfRow #divGender {
+  padding: 13px;
+  width: 47% !important;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .mainContent .halfRow {
+    width: 100%;
+  }
+}
+.mainContent .oneByThree {
+  width: 33.33333333%;
+  float: left;
+}
+@media (max-width: 767px) {
+  .mainContent .oneByThree {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .mainContent .oneByThree #State {
+    width: 96%;
+  }
+}
+@media (max-width: 767px) and (Orientation: landscape) {
+  .mainContent .oneByThree #State {
+    width: 94%;
+  }
+}
+.mainContent .oneByThree .textbox {
+  padding: 8px;
+  margin: 5px 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 86%;
+}
+@media (max-width: 767px) {
+  .mainContent .oneByThree .textbox {
+    width: 90%;
+  }
+}

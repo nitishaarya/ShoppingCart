@@ -1,0 +1,40 @@
+﻿.profileDiv {
+    /*background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.6)), url('../image/UserProfile.jpg');*/
+    height: 76vh;
+}
+
+.profileDiv, h2, h1 {
+    text-align: center;
+}
+
+#ContentPlaceHolder1_imgBtnLogout {
+    margin-top: 15px !important;
+    margin-right: 15px !important;
+}
+
+td {
+    text-align: left;
+    width: auto;
+}
+
+#ContentPlaceHolder1_profileDataList {
+    margin-bottom: 30px;
+    background-color: transparent !important;
+}
+
+.lnkBtn {
+    border: 2px solid #40ae9f;
+    font-size: 18px;
+    background-color: #40ae9f;
+    color: white;
+    padding: 12px;
+    margin: 16px;
+    border-radius: 5px;
+}
+
+    .lnkBtn:hover {
+        border: 2px solid #40ae9f;
+        text-decoration: none;
+        color: #40ae9f;
+        background-color: #c7eae6;
+    }

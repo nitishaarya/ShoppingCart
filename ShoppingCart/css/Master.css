@@ -1,0 +1,149 @@
+﻿ .well-sm {
+    margin: 0px;
+    background-color: #f0f4f3 !important;
+}
+.HeaderImage {
+    padding:17px 0px;
+    width:300px;
+}
+.badge-success {
+    font-size: 15px;
+    font-weight: bold;
+    display: none;
+    background-color: #40ae9f;
+}
+.container-fluid {
+    padding:0px;
+}
+#loggedUserInfo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav, .navbar {
+    margin:0px;
+}
+.navbar-collapse {
+    padding-left:90px;
+    padding-right:90px;
+}
+.navbar-toggle {
+    background-color: #40ae9f !important;
+    color: white !important;
+    margin:0;
+    border-radius:0;
+    border: 2px solid #40ae9f !important;
+}
+ .dropdown:hover .dropdown-menu {
+    display: inline-block;
+}
+.dropdown-menu {
+    position:absolute;
+    left:0px !important;
+    padding:0px;
+    background-color:gainsboro;
+    font-size:16px;
+}
+.dropdown-menu > li > a {
+    color:black !important;
+}
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    color: white !important;
+    background-color: #40ae9f !important;
+}
+.navbar-right > li > a:hover {
+    color: #40ae9f !important;
+    border-bottom: 3px solid #40ae9f !important;
+}
+.navbar-right > li > a::selection {
+    color: #40ae9f;
+}
+.navbar-header {
+    background-color:gainsboro;
+}.myNav {
+    margin-left: 5px;
+}
+div {
+    clear:none !important;
+}
+.navbar-right {
+    margin:0px;
+}
+.nav > li > a {
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid gainsboro;
+}
+.nav > li > a:hover {
+    color:black;
+    background-color:gainsboro;
+    border-bottom:3px solid black;
+}
+.cart {
+        margin-left: 15px;
+    }
+
+.row {
+    margin: 0px;
+}
+
+body {
+    padding: 0px !important;
+}
+
+.footerDiv {
+    min-height:12vh;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+.footerDiv .fa {
+    margin: 5px 10px;
+    font-size:32px;
+    color:#40ae9f;
+}
+
+.footerSpan {
+    display: block;
+    padding:4.5px;
+    font-size: 18px;
+}
+@media only screen and (max-width: 1024px) {
+    #myNavbar {
+        padding-left:37px !important;
+        padding-right:30px !important;
+    }
+}
+    @media only screen and (max-width: 767px) {
+        .myNav ul li.static {
+            float: none !important;
+        }
+        #navigationMenu ul.level2 {
+            top: 20% !important;
+            left: 100% !important;
+        }
+        .myNav ul li a {
+            border-style: none !important;
+        }
+        .navbar-right {
+            clear:both !important;
+        }
+        .badge-success {
+            right: 60%;
+        }
+
+        .footerDiv {
+            min-height: 14vh;
+        }
+
+        .fa {
+            margin: 2px 2px;
+        }
+
+        .footerSpan {
+            font-size: 12px;
+            font-weight: normal;
+        }
+    }
